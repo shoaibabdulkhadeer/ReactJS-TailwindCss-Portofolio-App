@@ -5,6 +5,7 @@ import javascript from "../../src/assets/javascript.png"
 import react from "../../src/assets/react.png"
 import tailwind from "../../src/assets/tailwind.png"
 import node from "../../src/assets/node.png"
+import Typewriter from "typewriter-effect";
 
 const Skills = () => {
   return (
@@ -17,7 +18,18 @@ const Skills = () => {
 
         <div className="text-center ">
           <h1 className="border-b-2 border-pink-600 inline text-4xl font-bold">Skills</h1>
-          <p className="mx-auto mt-3 text-xl max-w-[600px] ">These are the Technologies I Have worked with.</p>
+   
+          <p className=" mx-auto mt-3 text-xl max-w-[600px] font-mono text-green-500">
+                 <Typewriter 
+                  options={{
+                 strings: ["These are the Technologies I Have worked with." ],
+                 autoStart: true,
+                loop: true,
+                 }}
+                />
+             </p>
+
+
         </div>
 
        {/* grid */}

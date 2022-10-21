@@ -10,4 +10,10 @@
   html {
     font-family: "Raleway", sans-serif;
   }
+  
+}
+
+.typewriter {
+  color: red;
+  font-family: 'Courier New', Courier, monospace;
 }
