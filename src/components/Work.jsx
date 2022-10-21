@@ -4,7 +4,7 @@ import realstate from "../../src/assets/projects/realestate.jpg";
 
 const Work = () => {
   return (
-    <div name="Work" className="min-h-screen bg-[#0a192f] p-5">
+    <div name="Wor" className="min-h-screen bg-[#0a192f] p-5">
          {/*Work container */}
       <div className="text-[#ccd6f6] pl-4 ">
              
