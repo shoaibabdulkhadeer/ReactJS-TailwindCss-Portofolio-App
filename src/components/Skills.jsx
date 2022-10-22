@@ -6,6 +6,8 @@ import react from "../../src/assets/react.png"
 import tailwind from "../../src/assets/tailwind.png"
 import node from "../../src/assets/node.png"
 import Typewriter from "typewriter-effect";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+
 
 const Skills = () => {
   return (
@@ -17,7 +19,9 @@ const Skills = () => {
 
 
         <div className="text-center ">
-          <h1 className="border-b-2 border-pink-600 inline text-4xl font-bold">Skills</h1>
+        <AnimationOnScroll initiallyVisible={true} animateIn="animate__tada">
+          <h1 className="border-b-2 border-pink-600 inline text-4xl font-bold">Skillz</h1>
+          </AnimationOnScroll>
    
           <p className=" mx-auto mt-3 text-xl max-w-[600px] font-mono text-green-500">
                  <Typewriter 
@@ -34,33 +38,48 @@ const Skills = () => {
 
        {/* grid */}
         <div className="grid grid-cols-1 sm:grid-cols-3 ">
+        
+
          <div className="m-6 p-12 flex flex-col items-center justify-center shadow-md shadow-[#040c16] hover:scale-110 duration-150 cursor-pointer">  
+         <AnimationOnScroll initiallyVisible={true} animateIn="animate__tada">
                <img src={html} alt="" className="h-20"></img>
+               </AnimationOnScroll>
                <p className="mt-2">HTML</p>  
          </div>
-            
+     
          <div className="m-6 p-12 flex flex-col items-center justify-center shadow-md shadow-[#040c16] hover:scale-110 duration-150 cursor-pointer">  
-               <img src={css} alt="" className="h-20"></img>
+         <AnimationOnScroll initiallyVisible={true} animateIn="animate__tada">
+              <img src={css} alt="" className="h-20"></img>
+              </AnimationOnScroll>
                <p className="mt-2">CSS</p>  
+             
          </div>
 
          <div className="m-7 p-12 flex flex-col items-center justify-center shadow-md shadow-[#040c16] hover:scale-110 duration-150 cursor-pointer">  
+         <AnimationOnScroll initiallyVisible={true} animateIn="animate__tada">
                <img src={javascript} alt="" className="h-20"></img>
+               </AnimationOnScroll>
                <p className="mt-2">JAVASCRIPT</p>  
          </div>
 
          <div className="m-6 p-12 flex flex-col items-center justify-center shadow-md shadow-[#040c16] hover:scale-110 duration-150 cursor-pointer">  
+         <AnimationOnScroll initiallyVisible={true} animateIn="animate__tada">
                <img src={react} alt="" className="h-20"></img>
+               </AnimationOnScroll>
                <p className="mt-2">REACT</p>  
          </div>
  
          <div className="m-6 p-12 flex flex-col items-center justify-center shadow-md shadow-[#040c16] hover:scale-110 duration-150 cursor-pointer">  
+         <AnimationOnScroll initiallyVisible={true} animateIn="animate__tada">
                <img src={tailwind} alt="" className="h-20"></img>
+               </AnimationOnScroll>
                <p className="mt-2">TAILWIND </p>  
          </div>
 
          <div className="m-7 p-12 flex flex-col items-center justify-center shadow-md shadow-[#040c16] hover:scale-110 duration-500 cursor-pointer">  
+         <AnimationOnScroll initiallyVisible={true} animateIn="animate__tada">
                <img src={node} alt="" className="h-20"></img>
+               </AnimationOnScroll>
                <p className="mt-2">NODE JS</p>  
          </div>
 

@@ -6,9 +6,7 @@ import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
 import ClockLoader  from "react-spinners/ClockLoader";
-
-
-
+import "animate.css/animate.min.css";
 
 
 function App() {

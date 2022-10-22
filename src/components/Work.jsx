@@ -23,6 +23,8 @@ const Work = () => {
 
 
         {/* 1card  */}
+
+
    <div className="m-3 p-2 flex flex-col items-center justify-center shadow-md shadow-[#040c16] scale-95 hover:scale-100  hover:bg-slate-800 duration-150 cursor-pointer ">  
                <img src={Working} alt="" className="h-120"></img>
                       
