@@ -27,7 +27,7 @@ function App() {
      {loading ?   <ClimbingBoxLoader
         color={"#48f196"}
         loading={loading}
-        size={50}
+        size={20}
        
       />
     :
