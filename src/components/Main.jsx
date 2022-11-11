@@ -70,7 +70,7 @@ const Main = () => {
       </div>
 
       {/* Image */}
-      <AnimationOnScroll initiallyVisible={true} duration={3} animateIn="animate__swing">
+      <AnimationOnScroll initiallyVisible={true} duration={3} loop={true} animateIn="animate__swing">
       <div className="mt-20  bg-gray-700 rounded-full scale-4 sm:scale-24 md:scale-75 ">
       <img src={boy} alt="boy" />
       </div>   

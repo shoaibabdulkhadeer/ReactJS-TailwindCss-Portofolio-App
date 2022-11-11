@@ -5,8 +5,9 @@ import Main from "./components/Main";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
-import ClockLoader  from "react-spinners/ClockLoader";
+import ClimbingBoxLoader  from "react-spinners/ClimbingBoxLoader";
 import "animate.css/animate.min.css";
+
 
 
 function App() {
@@ -23,10 +24,10 @@ function App() {
   
   return ( 
     <div className= "flex items-center justify-center min-h-screen w-full bg-[#0a192f]">
-     {loading ?   <ClockLoader 
-        color={"#36d7b7"}
+     {loading ?   <ClimbingBoxLoader
+        color={"#48f196"}
         loading={loading}
-        size={80}
+        size={50}
        
       />
     :
