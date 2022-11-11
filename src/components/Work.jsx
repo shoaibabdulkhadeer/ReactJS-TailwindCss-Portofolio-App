@@ -1,6 +1,7 @@
 import React from "react";
 import realstate from "../../src/assets/projects/realestate.jpg";
 import crypto from "../../src/assets/projects/crypto.png";
+import Typewriter from "typewriter-effect";
 
 const Work = () => {
   return (
@@ -11,7 +12,16 @@ const Work = () => {
          {/* Text container */}
             <div className="text-center">
             <h1 className="font-bold text-4xl border-b-4 inline-block border-pink-600">WORK</h1>
-            <p className="mt-2 max-w-[600px] mx-auto">Check Out Some of My Recent Work</p>
+            <p className=" mx-auto mt-3 text-xl max-w-[600px] font-mono text-green-500">
+                 <Typewriter 
+                  options={{
+                 strings: ["Check Out Some of My Recent Work" ],
+                 autoStart: true,
+                loop: true,
+                 }}
+                />
+             </p>
+          
             </div>
 
 
@@ -28,7 +38,7 @@ const Work = () => {
 
                <p className="m-2 p-2 font-bold">Crypto API Project ✌</p>
                
-               <p className="p-2 font-bold">React js ,Tailwind css , CoingeckoAPI</p>
+               <p className="p-2 font-bold text-center">React js ,Tailwind css , CoingeckoAPI</p>
                
              
                       
