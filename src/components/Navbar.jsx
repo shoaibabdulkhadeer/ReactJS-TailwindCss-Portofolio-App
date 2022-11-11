@@ -97,7 +97,7 @@ const Navbar = () => {
               </a> 
         </li>
      
-        <li className='  w-[160px] h-[60px]  flex items-center justify-between bg-red-700 ml-[-100px] hover:ml-[-1px] duration-[0.6s]' > 
+        <li className='w-[160px] h-[60px]  flex items-center justify-between bg-red-700 ml-[-100px] hover:ml-[-1px] duration-[0.6s]' > 
            <a href='https://www.youtube.com/c/Zenx777/featured?app=desktop' className='flex justify-between items-center w-full text-gray-300 pr-2 ml-4'> 
              Youtube <FaYoutube size={40}/> 
               </a> 
