@@ -3,6 +3,7 @@ import realstate from "../../src/assets/projects/realestate.jpg";
 import crypto from "../../src/assets/projects/crypto.png";
 import Typewriter from "typewriter-effect";
 
+
 const Work = () => {
   return (
     <div name="Work" className="min-h-screen bg-[#0a192f] p-5">
@@ -26,7 +27,7 @@ const Work = () => {
 
 
 
--
+
            {/*---------------------------------- Grid Container ---------------------------------------------------*/}
 
            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center pl-7">

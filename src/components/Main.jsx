@@ -1,26 +1,47 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { MdArrowRightAlt } from "react-icons/md";
 import boy from "../../src/assets/boy.png";
 import Typewriter from "typewriter-effect";
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
 
 
 const Main = () => {
+ 
+  useEffect(()=> {
+    toast.info('Welcome!  Shoaib Here 😉, CheckOut My New Project In Work Section ✅', {
+      position: "bottom-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+      });
+  },[])
+ 
   return (
+  
     <div
       name="Main"
       className=" md:flex min-h-screen min-w-full bg-[#0a192f] p-20  justify-center items-center "
     >
       <div className="text-[#ccd6f6] text-sm sm:text-2xl ">
         <p className="text-pink-600 text-xs md:text-xl">Hi, my name is</p>  
-        <h1 className="text-2xl sm:text-3xl md:text-4xl">
-          Shoaib Abdul Khadeer
+        <h1 className="text-2xl sm:text-3xl md:text-4xl" >
+        Shoaib Abdul Khadeer
         </h1>
 
+        {/* alert component */}
+        <ToastContainer limit={1} className="text-sm "/>
+
+       
 
           <h1 className=" text-xl text-green-400 font-light sm:text-2xl md:text-4xl font-mono"> 
           <Typewriter 
