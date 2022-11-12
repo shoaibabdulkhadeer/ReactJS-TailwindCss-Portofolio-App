@@ -37,11 +37,8 @@ const Main = () => {
         <h1 className="text-2xl sm:text-3xl md:text-4xl" >
         Shoaib Abdul Khadeer
         </h1>
-
         {/* alert component */}
-        <ToastContainer limit={1} className="text-sm "/>
-
-       
+        <ToastContainer limit={1} className="text-sm "/>   
 
           <h1 className=" text-xl text-green-400 font-light sm:text-2xl md:text-4xl font-mono"> 
           <Typewriter 
@@ -53,7 +50,7 @@ const Main = () => {
           />
            </h1>
         
-         
+
         <p className="max-w-[600px] mt-4 text-sm md:text-xl">
           I’m a full-stack developer specializing in building and occasionally
           designing exceptional digital experiences. Currently, I’m focused on
@@ -72,10 +69,6 @@ const Main = () => {
         </p>
    
           
-
-
-
-
         <a href="/assets/hello.txt" download="my_file.txt">
           <button
             class="group bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border
@@ -90,10 +83,12 @@ const Main = () => {
         </a>
       </div>
 
+
+
       {/* Image */}
-      <AnimationOnScroll initiallyVisible={true} duration={3} loop={true} animateIn="animate__swing">
-      <div className="mt-20  bg-gray-700 rounded-full scale-4 sm:scale-24 md:scale-75 ">
-      <img src={boy} alt="boy" />
+      <AnimationOnScroll initiallyVisible={true} duration={2} loop={true} animateIn="animate__swing">
+      <div className="mt-20  bg-blue-400 rounded-full scale-4 sm:scale-24 md:scale-50 overflow-hidden">
+      <img src={boy} alt="boy" className=''  />
       </div>   
 </AnimationOnScroll>
       
