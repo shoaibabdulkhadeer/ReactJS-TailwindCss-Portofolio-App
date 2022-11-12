@@ -16,7 +16,7 @@ const Main = () => {
   useEffect(()=> {
     toast.info('Welcome!  Shoaib Here 😉, CheckOut My New Project In Work Section ✅', {
       position: "bottom-center",
-      autoClose: 10000,
+      autoClose: 50000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
