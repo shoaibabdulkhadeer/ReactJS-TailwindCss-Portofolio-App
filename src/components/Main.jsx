@@ -6,7 +6,7 @@ import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import goku from "../../src/assets/goku.gif"
 
 
 
@@ -49,16 +49,16 @@ const Main = () => {
             }}
           />
            </h1>
-        
+         
 
         <p className="max-w-[600px] mt-4 text-sm md:text-xl">
           I’m a full-stack developer specializing in building and occasionally
           designing exceptional digital experiences. Currently, I’m focused on
           building responsive full-stack web applications.
           </p> 
-
+    
         
-        <p className="font-signature text-xl text-pink-600 mt-2 sm:text-2xl md:text-4xl  ">
+        <p className="font-serif text-xl text-pink-600 mt-2 sm:text-2xl md:text-4xl flex items-center">
         <Typewriter 
             options={{
               strings: ["Shoaib AK" ],
@@ -66,7 +66,9 @@ const Main = () => {
               loop: true,
             }}
           />
+               <img src={goku} alt = "" className="w-11 rounded-lg ml-4"/>
         </p>
+       
    
           
         <a href="/assets/hello.txt" download="my_file.txt">
