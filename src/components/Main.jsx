@@ -71,7 +71,7 @@ const Main = () => {
        
    
           
-        <a href="/assets/hello.txt" download="my_file.txt">
+        {/* <a href="/assets/hello.txt" download="my_file.txt"> */}
           <button
             class="group bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border
          border-blue-500 hover:border-transparent rounded mt-3 flex items-center"
@@ -82,7 +82,7 @@ const Main = () => {
               className="group-hover:rotate-90  duration-700"
             />
           </button>
-        </a>
+        {/* </a> */}
       </div>
 
 
