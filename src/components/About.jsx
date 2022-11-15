@@ -32,10 +32,8 @@ const About = () => {
                <img src={design} alt='' className='h-13'/>
                </AnimationOnScroll>
               <p className='leading-relaxed text-sm md:text-xl'>I am passionate about building excellent software that improves
-              the lives of those around me. I specialize in creating software
-              for clients ranging from individuals and small-businesses all the
-              way to large enterprise corporations. What would you do if you had
-              a software expert available at your fingertips?</p>  
+              the lives of those around me. I am specializing in creating Responsive
+              web applications for individuals and small-businesses,I like to Learn New Technologies . </p>  
             </div>
             </AnimationOnScroll>
           </div>
