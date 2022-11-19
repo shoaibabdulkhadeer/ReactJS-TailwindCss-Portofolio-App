@@ -5,7 +5,7 @@ import Main from "./components/Main";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
-import ClimbingBoxLoader  from "react-spinners/ClimbingBoxLoader";
+import PacmanLoader   from "react-spinners/PacmanLoader";
 import "animate.css/animate.min.css";
 
 
@@ -24,10 +24,10 @@ function App() {
   
   return ( 
     <div className= "flex items-center justify-center min-h-screen w-full bg-[#0a192f]">
-     {loading ?   <ClimbingBoxLoader
+     {loading ?   <PacmanLoader 
         color={"#48f196"}
         loading={loading}
-        size={20}
+        size={40}
        
       />
     :
