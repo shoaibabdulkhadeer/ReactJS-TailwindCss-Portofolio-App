@@ -47,6 +47,10 @@ const Navbar = () => {
                       <li className='mr-6  hover:text-pink-600'>Contact</li>
             </Link>
 
+            <Link to="gaming" spy={true} smooth={true} offset={50} duration={500} activeClass="active"  >
+                      <li className='mr-6  hover:text-pink-600'>Gaming</li>
+            </Link>
+
             </ul>  
        </div>  
 
@@ -74,6 +78,11 @@ const Navbar = () => {
             <Link to="Contact" offset={50} duration={500}   onClick={handlechange}>
                       <li className='mb-10  hover:text-pink-600'>Contact</li>
             </Link>
+
+            <Link to="Gaming" offset={50} duration={500}   onClick={handlechange}>
+                      <li className='mb-10  hover:text-pink-600'>Gaming</li>
+            </Link>
+
 
 
             </ul>
