@@ -3,8 +3,6 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 
 
-
-
 const Contact = () => {
   return (
     <AnimationOnScroll animateIn="animate__fadeInLeftBig">
@@ -16,9 +14,9 @@ const Contact = () => {
                 </AnimationOnScroll>
                 <p className='text-gray-300 py-4 max-w-[400px]'> / / Submit the form below or shoot me an email  </p>
             </div>
-            <input className='bg-[#ccd6f6] p-2' type="text" placeholder='Name' name='name' />
-            <input className='my-4 p-2 bg-[#ccd6f6]' type="email" placeholder='Email' name='email' />
-            <textarea className='bg-[#ccd6f6] p-2' name="message" rows="10" placeholder='Message'></textarea>
+            <input className='bg-[#ccd6f6] p-2' type="text" placeholder='Name' name='name' required />
+            <input className='my-4 p-2 bg-[#ccd6f6]' type="email" placeholder='Email' name='email' required/>
+            <textarea className='bg-[#ccd6f6] p-2' name="message" rows="10" placeholder='Message' required></textarea>
             <AnimationOnScroll animateIn="animate__swing">
             <button className='text-white border-2 hover:bg-yellow-600 hover:border-yellow-600 hover:text-black font-bold px-4 py-3 my-8 mx-auto flex items-center'>
             Let's Collaborate
