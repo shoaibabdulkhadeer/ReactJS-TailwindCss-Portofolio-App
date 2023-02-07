@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
 import PacmanLoader   from "react-spinners/PacmanLoader";
+import Youtube from "./components/Youtube"
 import "animate.css/animate.min.css";
 
 
@@ -34,6 +35,7 @@ function App() {
     <div>
         <Navbar/>
         <Main />
+        <Youtube />
         <About />
         <Skills />
         <Work />

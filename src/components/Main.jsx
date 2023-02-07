@@ -14,7 +14,7 @@ import goku from "../../src/assets/goku.gif"
 const Main = () => {
  
   useEffect(()=> {
-    toast.info('Welcome!!  Shoaib Here 😉, CheckOut My New Project In Work Section ✅', {
+    toast.info('Welcome! Shoaib Here 😉, CheckOut My New Project In Work Section ✅', {
       position: "bottom-center",
       autoClose: 50000,
       hideProgressBar: false,
