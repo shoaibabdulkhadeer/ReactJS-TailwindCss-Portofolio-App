@@ -79,9 +79,10 @@ const Navbar = () => {
                       <li className='mb-10  hover:text-pink-600'>Contact</li>
             </Link>
 
-            <Link to="Gaming" offset={50} duration={500}   onClick={handlechange}>
+            <Link to="gaming" offset={50} duration={500}   onClick={handlechange}>
                       <li className='mb-10  hover:text-pink-600'>Gaming</li>
             </Link>
+
 
 
 
@@ -116,18 +117,16 @@ const Navbar = () => {
              Discord <FaDiscord size={40}/> 
               </a> 
         </li>
+
         <li className='w-[160px] h-[60px]  flex items-center justify-between bg-green-600 ml-[-100px] hover:ml-[-1px] duration-[0.6s]' > 
            <a href='/' className='flex justify-between items-center w-full text-gray-300 pr-2 ml-4 '> 
              Resume <BsFillPersonLinesFill size={40}/> 
               </a> 
         </li>
-   
-    
+  
 
        </ul>
   </div>
-
-
 
 
     </div>
