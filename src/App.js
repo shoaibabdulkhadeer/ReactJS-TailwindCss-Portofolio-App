@@ -8,12 +8,20 @@ import Work from "./components/Work";
 import PacmanLoader   from "react-spinners/PacmanLoader";
 import Youtube from "./components/Youtube"
 import "animate.css/animate.min.css";
+import { useState } from "react";
 
 
 
 function App() {
 
   const [loading, setLoading] = React.useState(false)
+  const [theme,setTheme] = useState(false)
+
+  const lightChange = () => {
+    // alert("Theme changed :- Press Ok To Proceed");
+    setTheme(prev =>  prev = !prev) 
+  
+ }
 
   React.useEffect(() => {
     setLoading(true)
@@ -33,13 +41,13 @@ function App() {
       />
     :
     <div>
-        <Navbar/>
-        <Main />
-        <Youtube />
-        <About />
-        <Skills />
-        <Work />
-        <Contact />
+        <Navbar  theme={theme} lightChange ={lightChange}/>
+        <Main  theme={theme}  />
+        <About  theme={theme} />
+        <Skills  theme={theme}/>
+        <Work  theme={theme} />
+        <Youtube theme={theme} />
+        <Contact  theme={theme} />
     </div> }
  
 </div>

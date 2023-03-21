@@ -11,7 +11,7 @@ import goku from "../../src/assets/goku.gif"
 
 
 
-const Main = () => {
+const Main = ({theme}) => {
  
   useEffect(()=> {
     toast.info('Welcome! Shoaib Here 😉, CheckOut My New Project In Work Section ✅', {
@@ -28,11 +28,10 @@ const Main = () => {
  
   return (
   
-    <div
-      name="Main"
-      className=" md:flex min-h-screen min-w-full bg-[#0a192f] p-20  justify-center items-center "
+    <div name="Main"
+      className= {theme? ("p-20 md:pl-36 md:flex min-h-screen min-w-full shadow-box-shadow bg-[#ffffff] justify-center items-center ") : ("p-20 md:pl-36 md:flex min-h-screen min-w-full bg-[#0a192f] shadow-box-shadow justify-center items-center ")} 
     >
-      <div className="text-[#ccd6f6] text-sm sm:text-2xl ">
+      <div className={theme? ("text-black font-bold shadow-box-shadow p-8 rounded-2xl text-sm sm:text-3xl ") : ("text-[#ffffff] text-sm sm:text-2xl ")} >
         <p className="text-pink-600 text-xs md:text-xl">Hi, my name is</p>  
         <h1 className="text-2xl sm:text-3xl md:text-4xl" >
         Shoaib Abdul Khadeer
@@ -40,10 +39,11 @@ const Main = () => {
         {/* alert component */}
         <ToastContainer limit={1} className="text-sm "/>   
 
-          <h1 className=" text-xl text-green-400 font-light sm:text-2xl md:text-4xl font-mono"> 
+          <h1 className={theme? " text-xl text-blue-600 font-bolder sm:text-2xl md:text-4xl font-mono" 
+          : " text-xl text-green-500 sm:text-2xl md:text-4xl font-mono"}> 
           <Typewriter 
             options={{
-              strings: ["I'm a Front End Developer", "Back End Developer","Fps Gamer","</> Happy coding !!" ],
+              strings: ["I'm a React JS Developer", "NodeJS,Tailwind","</> Happy coding !!" ],
               autoStart: true,
               loop: true,
             }}
@@ -52,13 +52,13 @@ const Main = () => {
          
 
         <p className="max-w-[600px] mt-4 text-sm md:text-xl">
-          I’m a full-stack developer specializing in building and occasionally
+          I’m a full-stack Mern developer specializing in building and occasionally
           designing exceptional digital experiences. Currently, I’m focused on
           building responsive full-stack web applications.
           </p> 
     
         
-        <p className="font-serif text-xl text-pink-600 mt-2 sm:text-2xl md:text-4xl flex items-center">
+        <p className="font-serif text-xl font-bold text-red-600 mt-2 sm:text-2xl md:text-4xl flex items-center">
         <Typewriter 
             options={{
               strings: ["Shoaib AK" ],
@@ -66,7 +66,7 @@ const Main = () => {
               loop: true,
             }}
           />
-               <img src={goku} alt = "" className="w-11 rounded-lg ml-4"/>
+               <img src={goku} alt = "" className="w-11 rounded-lg ml-4 shadow-box-shadow" />
         </p>
        
    

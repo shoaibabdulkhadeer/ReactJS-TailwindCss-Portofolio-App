@@ -9,12 +9,12 @@ import Typewriter from "typewriter-effect";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 
-const Skills = () => {
+const Skills = ({theme}) => {
   return (
-    <div name ="Skills" className="min-h-screen w-full bg-[#0a192f] p-5">
+    <div name ="Skills" className={theme? "min-h-screen w-full bg-[#ffffff] p-5" : "min-h-screen w-full bg-[#0a192f] p-5"}>
 
    {/* About Container */}
-      <div className="flex justify-center text-[#ccd6f6] flex-col pl-12">
+      <div className={theme? "flex justify-center text-[#000000] font-bold flex-col pl-12" : "flex justify-center text-[#ccd6f6] flex-col pl-12"}>
 
 
 

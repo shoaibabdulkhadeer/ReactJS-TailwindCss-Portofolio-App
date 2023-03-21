@@ -6,16 +6,16 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 
 
-const About = () => {
+const About = ({theme}) => {
   return (
 
 
 
-    <div name="About" className=' md:text-2xl  w-full min-h-screen bg-[#0a192f] text-[#ccd6f6] p-20  '>
-      <div className='flex flex-col justify-center items-center w-full h-full'>
+    <div className= {theme? ' md:text-2xl  w-full min-h-screen  shadow-box-shadow bg-[#ffffff] text-[#000000] font-bold p-20  ' : ' md:text-2xl  w-full min-h-screen bg-[#0a192f] text-[#ccd6f6] p-20  '}>
+      <div className='flex flex-col justify-center items-center w-full h-full shadow-box-shadow p-8 rounded-3xl'>
         <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
         <AnimationOnScroll animateIn="animate__fadeInLeftBig">
-          <div className='sm:text-right pb-8 pl-4'>
+          <div className='sm:text-right pb-8 pl-4 '>
             <p className='text-4xl font-bold inline border-b-4 border-pink-600'> About </p>
           </div>
           </AnimationOnScroll>

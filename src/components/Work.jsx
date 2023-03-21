@@ -7,15 +7,15 @@ import { GrBitcoin } from 'react-icons/gr';
 import netf from "../../src/assets/projects/netf.png"
 
 
-const Work = () => {
+const Work = ({theme}) => {
   return (
-    <div name="Work" className="min-h-screen bg-[#0a192f] p-5">
+    <div name="Work" className={theme? "min-h-screen bg-[#ffffff] text-black p-5" : "min-h-screen bg-[#0a192f] p-5"}>
          {/*Work container */}
       <div className="text-[#ccd6f6] pl-4 ">
              
          {/* Text container */}
             <div className="text-center">
-            <h1 className="font-bold text-4xl border-b-4 inline-block border-pink-600">WORK</h1>
+            <h1 className={theme? "font-bold text-4xl text-black border-b-4 inline-block border-pink-600" : "font-bold text-4xl border-b-4 inline-block border-pink-600"}>WORK</h1>
             <p className=" mx-auto mt-3 text-xl max-w-[600px] font-mono text-green-500">
                  <Typewriter 
                   options={{
@@ -37,7 +37,8 @@ const Work = () => {
 
 
         {/* 1card  */}
-   <div className="m-3 p-2 flex flex-col items-center justify-center shadow-md shadow-[#040c16] scale-95 hover:scale-100  hover:bg-slate-800 duration-150 cursor-pointer ">  
+   <div className= {theme? "m-3 p-2 flex flex-col text-black items-center justify-center shadow-md shadow-[#040c16] scale-95 hover:scale-100 hover:text-white  hover:bg-slate-800 duration-150 cursor-pointer "
+   : "m-3 p-2 flex flex-col  items-center justify-center shadow-md shadow-[#040c16] scale-95 hover:scale-100  hover:bg-slate-800 duration-150 cursor-pointer "} >  
                <img src={crypto} alt="" className="h-120"></img>
 
                <p className="m-2 p-2 font-bold flex items-center gap-2"> <GrBitcoin size={25}/> Crypto API Project <GrBitcoin size={25} /> </p>
@@ -77,7 +78,8 @@ const Work = () => {
 
 
    {/* 2card  */}
-   <div className="m-3 p-2 flex flex-col items-center justify-center shadow-md shadow-[#040c16] scale-95 hover:scale-100  hover:bg-slate-800 duration-150 cursor-pointer ">  
+   <div className= {theme? "m-3 p-2 flex flex-col text-black items-center justify-center shadow-md shadow-[#040c16] scale-95 hover:scale-100 hover:text-white  hover:bg-slate-800 duration-150 cursor-pointer "
+   : "m-3 p-2 flex flex-col  items-center justify-center shadow-md shadow-[#040c16] scale-95 hover:scale-100  hover:bg-slate-800 duration-150 cursor-pointer "}>  
                <img src={netf} alt="" className="h-120"></img>
                       
                <p className="m-2 p-2 font-bold flex items-center gap-2"> NETFLIX CLONE </p>
@@ -114,7 +116,8 @@ const Work = () => {
 
 
              {/* 3card  */}
-   <div className="m-3 p-2 flex flex-col items-center justify-center shadow-md shadow-[#040c16] scale-95 hover:scale-100  hover:bg-slate-800 duration-150 cursor-pointer ">  
+   <div className= {theme? "m-3 p-2 flex flex-col text-black items-center justify-center shadow-md shadow-[#040c16] scale-95 hover:scale-100 hover:text-white  hover:bg-slate-800 duration-150 cursor-pointer "
+   : "m-3 p-2 flex flex-col  items-center justify-center shadow-md shadow-[#040c16] scale-95 hover:scale-100  hover:bg-slate-800 duration-150 cursor-pointer "}>  
                <img src={movie} alt="" className="h-120"></img>
                <p className="m-2 p-2 font-bold">🎥 Movie App 🎥</p>
                
@@ -150,7 +153,8 @@ const Work = () => {
 
 
    {/* 4card  */}
-   <div className="m-3 p-2 flex flex-col items-center justify-center shadow-md shadow-[#040c16] scale-95 hover:scale-100  hover:bg-slate-800 duration-150 cursor-pointer ">  
+   <div className= {theme? "m-3 p-2 flex flex-col text-black items-center justify-center shadow-md shadow-[#040c16] scale-95 hover:scale-100 hover:text-white  hover:bg-slate-800 duration-150 cursor-pointer "
+   : "m-3 p-2 flex flex-col  items-center justify-center shadow-md shadow-[#040c16] scale-95 hover:scale-100  hover:bg-slate-800 duration-150 cursor-pointer "}>  
                <img src={realstate} alt="" className="h-120"></img>
                       
                       {/* buttons */}
@@ -185,7 +189,8 @@ const Work = () => {
 
 
       {/* 5card  */}
-      <div className="m-3 p-2 flex flex-col items-center justify-center shadow-md shadow-[#040c16] scale-95 hover:scale-100  hover:bg-slate-800 duration-150 cursor-pointer ">  
+      <div className= {theme? "m-3 p-2 flex flex-col text-black items-center justify-center shadow-md shadow-[#040c16] scale-95 hover:scale-100 hover:text-white  hover:bg-slate-800 duration-150 cursor-pointer "
+   : "m-3 p-2 flex flex-col  items-center justify-center shadow-md shadow-[#040c16] scale-95 hover:scale-100  hover:bg-slate-800 duration-150 cursor-pointer "}>  
                <img src={realstate} alt="" className="h-120"></img>
                       
                       {/* buttons */}
@@ -224,7 +229,8 @@ const Work = () => {
 
 
    {/* 6card  */}
-   <div className="m-3 p-2 flex flex-col items-center justify-center shadow-md shadow-[#040c16] scale-95 hover:scale-100  hover:bg-slate-800 duration-150 cursor-pointer ">  
+   <div className= {theme? "m-3 p-2 flex flex-col text-black items-center justify-center shadow-md shadow-[#040c16] scale-95 hover:scale-100 hover:text-white  hover:bg-slate-800 duration-150 cursor-pointer "
+   : "m-3 p-2 flex flex-col  items-center justify-center shadow-md shadow-[#040c16] scale-95 hover:scale-100  hover:bg-slate-800 duration-150 cursor-pointer "}>  
                <img src={realstate} alt="" className="h-120"></img>
                       
                       {/* buttons */}
