@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { FaBars , FaLinkedin, FaDiscord, FaYoutube } from 'react-icons/fa';
+import { FaBars , FaLinkedin, FaGithub, FaYoutube } from 'react-icons/fa';
 import {BsFillPersonLinesFill}  from 'react-icons/bs';
 import { ImCross } from 'react-icons/im';
 
@@ -113,26 +113,34 @@ const Navbar = ({theme,lightChange}) => {
   <div className=' md:flex fixed flex-col top-[40%] left-0 '> 
      
        <ul >
-       <li className=' w-[160px] h-[60px]  flex items-center justify-between bg-blue-500 ml-[-100px] hover:ml-[-1px] duration-[0.6s]' > 
+      
+
+
+       <li className=' w-[160px] h-[60px] flex items-center justify-between bg-blue-500 ml-[-100px] hover:ml-[-1px] duration-[0.6s]' > 
            <a href='https://in.linkedin.com/in/shoaib-abdul-khadeer-214260227' className='flex justify-between items-center w-full text-gray-300 pr-2 ml-4'> 
-             LinkedIn <FaLinkedin size={40}/> 
-              </a> 
-        </li>
-     
-        <li className='w-[160px] h-[60px]  flex items-center justify-between bg-red-700 ml-[-100px] hover:ml-[-1px] duration-[0.6s]' > 
-           <a href='https://www.youtube.com/c/Zenx777/featured?app=desktop' className='flex justify-between items-center w-full text-gray-300 pr-2 ml-4'> 
-             Youtube <FaYoutube size={40}/> 
-              </a> 
-        </li>
-        <li className='w-[160px] h-[60px]  flex items-center justify-between bg-[#3F495A] ml-[-100px] hover:ml-[-1px] duration-[0.6s]' > 
-           <a href='https://discord.gg/3zyqvWFUaD' className='flex justify-between items-center w-full text-gray-300 pr-2 ml-4'> 
-             Discord <FaDiscord size={40}/> 
+             LinkedIn <FaLinkedin size={45}/> 
               </a> 
         </li>
 
+        <li className='w-[160px] h-[60px]  flex items-center justify-between bg-purple-800 ml-[-100px] hover:ml-[-1px] duration-[0.6s]' > 
+           <a href='https://github.com/shoaibabdulkhadeer' className='flex justify-between items-center w-full text-gray-300 pr-2 ml-4'> 
+             Github <FaGithub size={45}/> 
+              </a> 
+        </li>
+
+  
+
+     
+        <li className='w-[160px] h-[60px]  flex items-center justify-between bg-red-700 ml-[-100px] hover:ml-[-1px] duration-[0.6s]' > 
+           <a href='https://www.youtube.com/c/Zenx777/featured?app=desktop' className='flex justify-between items-center w-full text-gray-300 pr-2 ml-4'> 
+             Youtube <FaYoutube size={45}/> 
+              </a> 
+        </li>
+       
+
         <li className='w-[160px] h-[60px]  flex items-center justify-between bg-green-600 ml-[-100px] hover:ml-[-1px] duration-[0.6s]' > 
            <a href='/' className='flex justify-between items-center w-full text-gray-300 pr-2 ml-4 '> 
-             Resume <BsFillPersonLinesFill size={40}/> 
+             Resume <BsFillPersonLinesFill size={45}/> 
               </a> 
         </li>
   
