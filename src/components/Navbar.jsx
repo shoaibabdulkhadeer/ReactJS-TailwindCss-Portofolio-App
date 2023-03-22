@@ -102,8 +102,8 @@ const Navbar = ({theme,lightChange}) => {
 
 
   {/* hamburger */}
-  <div className='m-3 cursor-pointer md:hidden' onClick={handlechange}>
-      { nav ? <FaBars size={25}/> : <ImCross size={25}/> }
+  <div className='m-3 cursor-pointer md:hidden ' onClick={handlechange}>
+      { nav ? <FaBars size={25} className='hover:scale-125'/> : <ImCross size={25}/> }
  </div>
 
 
@@ -113,8 +113,7 @@ const Navbar = ({theme,lightChange}) => {
   <div className=' md:flex fixed flex-col top-[40%] left-0 '> 
      
        <ul >
-      
-
+    
 
        <li className=' w-[160px] h-[60px] flex items-center justify-between bg-blue-500 ml-[-100px] hover:ml-[-1px] duration-[0.6s]' > 
            <a href='https://in.linkedin.com/in/shoaib-abdul-khadeer-214260227' className='flex justify-between items-center w-full text-gray-300 pr-2 ml-4'> 
