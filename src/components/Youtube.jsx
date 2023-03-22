@@ -3,7 +3,7 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const Youtube = ({theme}) => {
   return (
-    <div className={theme? 'bg-white ' : ''}>
+    <div name='gaming'  className={theme? 'bg-white ' : ''}>
         
         <AnimationOnScroll animateIn="animate__fadeInLeftBig">
             <div className='flex flex-col items-center'>
