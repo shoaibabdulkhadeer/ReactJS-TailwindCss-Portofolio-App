@@ -31,7 +31,7 @@ const Main = ({theme}) => {
     <div name="Main"
       className= {theme? ("p-20 md:pl-36 md:flex min-h-screen min-w-full shadow-box-shadow bg-[#ffffff] justify-center items-center ") : ("p-20 md:pl-36 md:flex min-h-screen min-w-full bg-[#0a192f] shadow-box-shadow justify-center items-center ")} 
     >
-      <div className={theme? ("text-black font-bold shadow-box-shadow p-8 rounded-2xl text-sm sm:text-3xl ") : ("text-[#ffffff] text-sm sm:text-2xl ")} >
+      <div className={theme? ("text-black  font-bold shadow-box-shadow p-5 rounded-2xl text-sm sm:text-3xl ") : ("text-[#ffffff] text-sm sm:text-2xl ")} >
         <p className="text-pink-600 text-xs md:text-xl">Hi, my name is</p>  
         <h1 className="text-2xl sm:text-3xl md:text-4xl" >
         Shoaib Abdul Khadeer

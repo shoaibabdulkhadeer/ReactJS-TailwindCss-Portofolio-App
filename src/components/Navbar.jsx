@@ -31,36 +31,36 @@ const Navbar = ({theme,lightChange}) => {
 
               {theme? <img className='ml-2 p-0 cursor-pointer' src='/images/lightbulb.png' alt='/'  width={45}/> : null}
 
+
 {/* <BsLightbulbOff size={35} className='ml-5 mt-2 cursor-pointer' onClick={lightChange}/> */}
       </div>
-     
             
          {/* Desktop Devices */}
        <div className='pr-5 pt-4 cursor-pointer mr-5 hidden md:flex'>
            <ul className='flex text-xl'>
 
            <Link to="Main" spy={true} smooth={true} offset={50} duration={500} activeClass="active"  >
-                      <li className='mr-6  hover:text-pink-600 hover:underline'>Home</li>
+                      <li className='mr-6  hover:text-pink-600 hover:overline '>Home</li>
             </Link>
                     
             <Link to="About" spy={true} smooth={true} offset={50} duration={900} activeClass="active"  >
-                      <li className='mr-6  hover:text-pink-600'>About</li>
+                      <li className='mr-6  hover:text-pink-600 hover:overline'>About</li>
             </Link>
 
             <Link to="Skills" spy={true} smooth={true} offset={50} duration={500} activeClass="active"  >
-                      <li className='mr-6  hover:text-pink-600'>Skills </li>
+                      <li className='mr-6  hover:text-pink-600 hover:overline'>Skills </li>
             </Link>
 
             <Link to="Work" spy={true} smooth={true} offset={50} duration={500} activeClass="active"  >
-                      <li className='mr-6  hover:text-pink-600'>Work</li>
+                      <li className='mr-6  hover:text-pink-600 hover:overline'>Work</li>
             </Link>
 
             <Link to="Contact" spy={true} smooth={true} offset={50} duration={500} activeClass="active"  >
-                      <li className='mr-6  hover:text-pink-600'>Contact</li>
+                      <li className='mr-6  hover:text-pink-600 hover:overline'>Contact</li>
             </Link>
 
             <Link to="gaming" spy={true} smooth={true} offset={50} duration={500} activeClass="active"  >
-                      <li className='mr-6  hover:text-pink-600'>Gaming</li>
+                      <li className='mr-6  hover:text-pink-600 hover:overline'>Gaming</li>
             </Link>
 
             </ul>  
@@ -72,27 +72,27 @@ const Navbar = ({theme,lightChange}) => {
 
              
            <Link to="Main"  offset={50} duration={500}  onClick={handlechange} >
-                      <li className='mb-10  hover:text-blue-600'>Home</li>
+                      <li className='mb-10  hover:text-blue-600 hover:overline'>Home</li>
             </Link>
                     
             <Link to="About"   offset={50} duration={900}  onClick={handlechange} >
-                      <li className='mb-10  hover:text-blue-600'>About</li>
+                      <li className='mb-10  hover:text-blue-600 hover:overline'>About</li>
             </Link>
 
             <Link to="Skills" offset={50} duration={500}  onClick={handlechange} >
-                      <li className='mb-10  hover:text-blue-600'>Skills </li>
+                      <li className='mb-10  hover:text-blue-600 hover:overline'>Skills </li>
             </Link>
 
             <Link to="Work" smooth={true} offset={50} duration={500} onClick={handlechange} >
-                      <li className='mb-10  hover:text-blue-600'>Work</li>
+                      <li className='mb-10  hover:text-blue-600 hover:overline'>Work</li>
             </Link>
 
             <Link to="Contact" offset={50} duration={500}   onClick={handlechange}>
-                      <li className='mb-10   hover:text-blue-600'>Contact</li>
+                      <li className='mb-10   hover:text-blue-600 hover:overline'>Contact</li>
             </Link>
 
             <Link to="gaming" offset={50} duration={500}   onClick={handlechange}>
-                      <li className='mb-10   hover:text-blue-600'>Gaming</li>
+                      <li className='mb-10   hover:text-blue-600 hover:overline'>Gaming</li>
             </Link>
 
 
