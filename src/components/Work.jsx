@@ -1,5 +1,4 @@
 import React from "react";
-import realstate from "../../src/assets/projects/realestate.jpg";
 import crypto from "../../src/assets/projects/crypto.png";
 import Typewriter from "typewriter-effect";
 import movie from "../../src/assets/projects/movie.png"
