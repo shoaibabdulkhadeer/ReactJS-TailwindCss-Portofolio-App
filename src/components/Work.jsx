@@ -195,7 +195,11 @@ const Work = ({theme}) => {
       {/* 5card  */}
       <div className= {theme? "m-3 p-2 flex flex-col text-black items-center justify-center shadow-md shadow-[#040c16] scale-95 hover:scale-100 hover:text-white  hover:bg-slate-800 duration-150 cursor-pointer "
    : "m-3 p-2 flex flex-col  items-center justify-center shadow-md shadow-[#040c16] scale-95 hover:scale-100  hover:bg-slate-800 duration-150 cursor-pointer "}>  
-               <img src='/images/const.jpg' alt="" className="h-120"></img>
+               <img src='/images/lib.png' alt="" className="h-120"></img>
+
+               <p className="m-2 p-2 font-bold flex items-center gap-2"> <GrBitcoin size={25}/> Library Management System <GrBitcoin size={25} /> </p>
+               
+               <p className="p-2 font-bold text-center">React js , Custom Css</p>
                       
                       {/* buttons */}
                 <div className="flex items-center justify-center mt-2 ">
