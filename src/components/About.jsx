@@ -51,14 +51,14 @@ function LoadingScreen() {
 const About = ({theme}) => {
 
 
-  const [canvasWidth, setCanvasWidth] = useState(150);
+  const [canvasWidth, setCanvasWidth] = useState(200);
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 640) {
         setCanvasWidth(450);  // Set width to 350px for larger screens
       } else {
-        setCanvasWidth(150);  // Set width to 200px for smaller screens
+        setCanvasWidth(200);  // Set width to 200px for smaller screens
       }
     };
 
