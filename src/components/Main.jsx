@@ -1,17 +1,15 @@
 import React, { Suspense, useEffect, useRef } from "react";
 import { MdArrowRightAlt } from "react-icons/md";
-import boy from "../../src/assets/boy.png";
 import Typewriter from "typewriter-effect";
 import "animate.css/animate.min.css";
-import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import goku from "../../src/assets/goku.gif"
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, useGLTF, Preload, useAnimations } from '@react-three/drei';
+import { OrbitControls, useGLTF, useAnimations } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 import { useProgress } from '@react-three/drei';
-import { Leva, useControls } from 'leva';
+import { Leva } from 'leva';
 
 
 function Model({ modelPath }) {
@@ -65,19 +63,19 @@ const Main = ({ theme }) => {
     });
   }, [])
 
-  const { cameraX, cameraY, cameraZ, lightIntensity, shadowIntensity } = useControls({
-    Camera: {
-      cameraX: { value: 4, min: 1, max: 10 },
-      cameraY: { value: 4, min: 1, max: 10 },
-      cameraZ: { value: 4, min: 1, max: 10 },
-    },
-    Lighting: {
-      lightIntensity: { value: 1, min: 0, max: 5 },
-    },
-    Shadows: {
-      shadowIntensity: { value: 10, min: 5, max: 2 },
-    },
-  });
+  // const { cameraX, cameraY, cameraZ, lightIntensity, shadowIntensity } = useControls({
+  //   Camera: {
+  //     cameraX: { value: 4, min: 1, max: 10 },
+  //     cameraY: { value: 4, min: 1, max: 10 },
+  //     cameraZ: { value: 4, min: 1, max: 10 },
+  //   },
+  //   Lighting: {
+  //     lightIntensity: { value: 1, min: 0, max: 5 },
+  //   },
+  //   Shadows: {
+  //     shadowIntensity: { value: 10, min: 5, max: 2 },
+  //   },
+  // });
 
   return (
 
@@ -145,7 +143,7 @@ const Main = ({ theme }) => {
 <Suspense fallback={<LoadingScreen />}>
 <Canvas 
 camera={{ position: [-2,5,5], fov: 50 }}
-shadowIntensity={shadowIntensity}
+// shadowIntensity={shadowIntensity}
 // camera={{ position: [cameraX, cameraY, cameraZ], fov: 50 }}
 
  style={{height:"440px"}} shadows >
