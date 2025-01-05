@@ -24,13 +24,13 @@ function Model({ modelPath }) {
 useFrame(() => {
     if (modelRef.current) {
       // modelRef.current.rotation.x += 0.01;  // Rotate along X axis
-      // modelRef.current.rotation.y += 0.01;  // Rotate along Y axis
+      modelRef.current.rotation.y += 0.01;  // Rotate along Y axis
       // modelRef.current.rotation.z += 0.01;  // Rotate along Z axis
     }
   });
 
 // return <primitive object={scene} ref={modelRef} scale={1.5} position={[10, -60.5, 5]} />
-return <primitive object={scene} ref={modelRef} scale={70.5} position={[0, -57, 5]}  castShadow/>
+return <primitive object={scene} ref={modelRef} scale={70.5} position={[0, -57, 5]}  castShadow />
 }
 
 
@@ -142,28 +142,29 @@ const Main = ({ theme }) => {
 
 <Suspense fallback={<LoadingScreen />}>
 <Canvas 
-camera={{ position: [-2,5,5], fov: 50 }}
+// camera={{ position: [-2,5,5], fov: 50 }}
+camera={{ position: [-2,0,5], fov: 50 }}
 // shadowIntensity={shadowIntensity}
 // camera={{ position: [cameraX, cameraY, cameraZ], fov: 50 }}
 
- style={{height:"440px"}} shadows >
+ style={{height:"440px",width:"400px"}} shadows >
 
-<ambientLight intensity={0.4} />
+<ambientLight intensity={3} />
 <directionalLight 
             position={[5, 20, 5]} 
-            intensity={30} 
+            intensity={10} 
             castShadow 
             shadow-mapSize-width={2024} // Set shadow map size for better quality
             shadow-mapSize-height={1024}
             shadow-camera-near={24} // Set near clipping plane
             shadow-camera-far={10} // Set far clipping plane
           />
-    <Model modelPath="/rogue_tv_man.glb" />
+    <Model modelPath="/skate.glb" />
     <OrbitControls  
         makeDefault 
           enableZoom={true} 
           maxDistance={240} 
-          minDistance={173} 
+          minDistance={165} 
           // maxDistance={440} 
           // minDistance={473} 
           target={[3, 0, 0.01]} 
