@@ -113,11 +113,11 @@ style={{ width: `${canvasWidth}px`, height: '440px' }}
 
 <ambientLight intensity={0.4} />
 <directionalLight 
-            position={[5, 20, 5]} 
-            intensity={10} 
+            position={[5, 10, 5]} 
+            intensity={5} 
             castShadow 
             // shadow-mapSize-width={2024} // Set shadow map size for better quality
-            shadow-mapSize-height={1024}
+            // shadow-mapSize-height={1024}
             shadow-camera-near={24} // Set near clipping plane
             shadow-camera-far={10} // Set far clipping plane
           />

@@ -171,15 +171,15 @@ camera={{ position: [-2,0,5], fov: 50 }}
  className="w-[150px] sm:w-[150px]" 
  >
 
-<ambientLight intensity={3} />
+<ambientLight intensity={1.5} />
 <directionalLight 
             position={[5, 20, 5]} 
-            intensity={10} 
+            intensity={5} 
             castShadow 
-            shadow-mapSize-width={2024} // Set shadow map size for better quality
-            shadow-mapSize-height={1024}
-            shadow-camera-near={24} // Set near clipping plane
-            shadow-camera-far={10} // Set far clipping plane
+            // shadow-mapSize-width={2024} // Set shadow map size for better quality
+            // shadow-mapSize-height={1024}
+            shadow-camera-near={1}
+shadow-camera-far={50}
           />
     <Model modelPath="/skate.glb" />
     <OrbitControls  
