@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useRef } from "react";
+import React, { Suspense, useEffect, useRef, useState } from "react";
 import { MdArrowRightAlt } from "react-icons/md";
 import Typewriter from "typewriter-effect";
 import "animate.css/animate.min.css";
@@ -49,6 +49,25 @@ function LoadingScreen() {
 }
 
 const Main = ({ theme }) => {
+
+
+
+  const [canvasWidth, setCanvasWidth] = useState(220);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 640) {
+        setCanvasWidth(450);  // Set width to 350px for larger screens
+      } else {
+        setCanvasWidth(220);  // Set width to 200px for smaller screens
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Initialize the width on load
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     toast.info('Welcome! Shoaib Here 😉, CheckOut My New Project In Work Section ✅', {
@@ -147,7 +166,10 @@ camera={{ position: [-2,0,5], fov: 50 }}
 // shadowIntensity={shadowIntensity}
 // camera={{ position: [cameraX, cameraY, cameraZ], fov: 50 }}
 
- style={{height:"440px",width:"400px"}} shadows >
+ style={{ width: `${canvasWidth}px`, height: '440px' }}
+ shadows 
+ className="w-[150px] sm:w-[150px]" 
+ >
 
 <ambientLight intensity={3} />
 <directionalLight 

@@ -1,4 +1,4 @@
-import React, { Suspense, useRef } from 'react';
+import React, { Suspense, useEffect, useRef, useState } from 'react';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF, useAnimations } from '@react-three/drei';
@@ -26,7 +26,7 @@ useFrame(() => {
   });
 
 // return <primitive object={scene} ref={modelRef} scale={1.5} position={[10, -60.5, 5]} />
-return <primitive object={scene} ref={modelRef} scale={70.5} position={[0, -57, 5]}  castShadow />
+return <primitive object={scene} ref={modelRef} scale={70.5} position={[10, -57, 5]}  castShadow />
 }
 
 
@@ -49,6 +49,26 @@ function LoadingScreen() {
 
 
 const About = ({theme}) => {
+
+
+  const [canvasWidth, setCanvasWidth] = useState(150);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 640) {
+        setCanvasWidth(450);  // Set width to 350px for larger screens
+      } else {
+        setCanvasWidth(150);  // Set width to 200px for smaller screens
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Initialize the width on load
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+
   return (
 
 
@@ -77,7 +97,7 @@ const About = ({theme}) => {
             {/* <AnimationOnScroll animateIn="animate__tada">
                <img src={design} alt='' className='h-13'/>
                </AnimationOnScroll> */}
-<div className="">
+<div className="w-full">
 
 <Leva collapsed/>
 
@@ -88,14 +108,15 @@ camera={{ position: [-2,5,5], fov: 50 }}
 // shadowIntensity={shadowIntensity}
 // camera={{ position: [cameraX, cameraY, cameraZ], fov: 50 }}
 
- style={{height:"480px",width:"400px"}} shadows >
+style={{ width: `${canvasWidth}px`, height: '440px' }}
+ shadows >
 
 <ambientLight intensity={0.4} />
 <directionalLight 
             position={[5, 20, 5]} 
             intensity={10} 
             castShadow 
-            shadow-mapSize-width={2024} // Set shadow map size for better quality
+            // shadow-mapSize-width={2024} // Set shadow map size for better quality
             shadow-mapSize-height={1024}
             shadow-camera-near={24} // Set near clipping plane
             shadow-camera-far={10} // Set far clipping plane
