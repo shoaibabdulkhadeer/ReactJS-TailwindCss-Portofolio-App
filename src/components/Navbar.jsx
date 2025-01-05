@@ -116,7 +116,7 @@ const Navbar = ({theme,lightChange}) => {
     
 
        <li className=' w-[160px] h-[60px] flex items-center justify-between bg-blue-500 ml-[-100px] hover:ml-[-1px] duration-[0.6s]' > 
-           <a href='https://in.linkedin.com/in/shoaib-abdul-khadeer-214260227' className='flex justify-between items-center w-full text-gray-300 pr-2 ml-4'> 
+           <a href='https://www.linkedin.com/in/shoaib-abdul-khadeer-214260227' className='flex justify-between items-center w-full text-gray-300 pr-2 ml-4'> 
              LinkedIn <FaLinkedin size={45}/> 
               </a> 
         </li>
@@ -138,7 +138,7 @@ const Navbar = ({theme,lightChange}) => {
        
 
         <li className='w-[160px] h-[60px]  flex items-center justify-between bg-green-600 ml-[-100px] hover:ml-[-1px] duration-[0.6s]' > 
-           <a href='/' className='flex justify-between items-center w-full text-gray-300 pr-2 ml-4 '> 
+           <a href='/shoaib.docx' className='flex justify-between items-center w-full text-gray-300 pr-2 ml-4 '> 
              Resume <BsFillPersonLinesFill size={45}/> 
               </a> 
         </li>
