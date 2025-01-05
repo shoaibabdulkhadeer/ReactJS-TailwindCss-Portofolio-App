@@ -140,7 +140,7 @@ const Main = ({ theme }) => {
           <img src={goku} alt="" className="w-11 rounded-lg ml-4 shadow-box-shadow" />
         </p>
 
-        <a href={'/shoaib.docx'} download>
+        <a href={'/shoaib.pdf'} download>
           <button
             class="group bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-1 px-3 border
          border-blue-500 hover:border-transparent rounded mt-3 flex items-center text-sm" >
